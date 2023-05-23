@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  @apply md:overflow-x-hidden;
+}
+
+nav {
+  @apply absolute -left-full transition-all duration-500 lg:left-0 lg:relative;
+}
+
+nav.open {
+  @apply absolute left-auto top-20 w-11/12 bg-white z-50 p-8 rounded-lg lg:bg-transparent lg:relative lg:left-0 lg:top-0 lg:w-auto lg:p-0 lg:rounded-none lg:shadow-none;
+  box-shadow: 0 200px 300px rgba(0, 0, 0, 0.8);
+}
+
+nav ul {
+  @apply list-none flex flex-col lg:flex-row gap-4 lg:gap-10 text-center;
+}
+
+nav ul li button {
+  @apply lg:text-Grayish-Blue text-Dark-blue;
+}
+
+.btn {
+  @apply rounded-full bg-gradient-to-r from-Lime-Green to-Bright-Cyan font-semibold text-sm text-white w-40 h-11;
+}
+
+.cards {
+  @apply rounded-t-md lg:h-48 h-64 ml-auto mr-auto w-full;
+}
+
+.icons {
+  @apply lg:pb-10 pb-5 lg:mx-px ml-auto mr-auto;
+}
+
+h2 {
+  @apply text-[17px] mt-2 text-Dark-blue;
+}
+
+h3 {
+  @apply mt-2 text-Grayish-Blue;
+}
+
+h4 {
+  @apply text-xs mt-3 text-Grayish-Blue;
+}
+
+footer {
+  @apply bg-Dark-blue flex flex-col lg:grid items-center justify-center gap-6 lg:gap-0 lg:grid-cols-3 lg:items-start lg:justify-between lg:px-32 px-6 lg:py-10;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
