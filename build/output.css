@@ -977,24 +977,8 @@ footer{
     margin-bottom: 1.5rem;
   }
 
-  .lg\:block{
-    display: block;
-  }
-
-  .lg\:inline-block{
-    display: inline-block;
-  }
-
-  .lg\:flex{
-    display: flex;
-  }
-
   .lg\:grid{
     display: grid;
-  }
-
-  .lg\:inline-grid{
-    display: inline-grid;
   }
 
   .lg\:hidden{
