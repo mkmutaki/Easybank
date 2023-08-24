@@ -14,11 +14,20 @@
     <header class="relative z-50 bg-white flex justify-between items-center lg:px-32 lg:py-5 py-6 px-6 shadow">
       <img src="./images/logo.svg" alt="" class="cursor-pointer" />
       <nav>
-        <ul>
+        <ul class="items-center">
           <li><button>Home</button></li>
-          <li><button>About</button></li>
+          <li>
+            <button class="about-btn gap-2 lg:relative flex">About <img src="./images/icon-arrow-down.svg" alt="" class="h-2 mt-2" id="Down2" /> <img src="./images/icon-arrow-up.svg" alt="" class="hidden h-2 mt-2" id="Up2" /></button>
+            <div class="about-navi hidden absolute bg-gray-100 rounded-xl lg:mt-9 lg:drop-shadow-xl">
+              <ul class="px-6 mt-5 lg:mt-4 lg:text-sm flex-col gap-2">
+                <li class="items-center justify-start mb-4">History</li>
+                <li class="mb-4 items-center justify-start">Our Team</li>
+                <li class="items-center justify-start mb-5">Blog</li>
+              </ul>
+            </div>
+          </li>
+          <li><button>Services</button></li>
           <li><button>Contact</button></li>
-          <li><button>Blog</button></li>
           <li><button>Careers</button></li>
         </ul>
       </nav>
@@ -32,7 +41,7 @@
         <h1 class="text-slate-800 text-6xl mb-6 lg:text-5xl">Next generation digital banking</h1>
 
         <p class="px-10 lg:px-0 text-Grayish-Blue pb-8">Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</p>
-        <button class="btn">Request Invite</button>
+        <button class="btn lg:hidden">Request Invite</button>
       </article>
 
       <article class="relative">
